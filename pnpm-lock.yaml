@@ -7,6 +7,9 @@ importers:
       classnames:
         specifier: ^2.3.2
         version: registry.npmjs.org/classnames@2.3.2
+      cvd:
+        specifier: workspace:^
+        version: link:packages/components/cvd
       react:
         specifier: ^18.2.0
         version: registry.npmjs.org/react@18.2.0
@@ -71,6 +74,44 @@ importers:
       typescript:
         specifier: ^5.0.3
         version: registry.npmjs.org/typescript@5.0.3
+
+  packages/components/cvd:
+    dependencies:
+      react:
+        specifier: '>=18.0.0'
+        version: registry.npmjs.org/react@18.2.0
+      react-dom:
+        specifier: '>=18.0.0'
+        version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
+      tailwindcss:
+        specifier: '>=3.2.0'
+        version: registry.npmjs.org/tailwindcss@3.3.1(postcss@8.4.21)(ts-node@10.9.1)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.0.28
+        version: registry.npmjs.org/@types/react@18.0.33
+      '@types/react-dom':
+        specifier: ^18.0.11
+        version: registry.npmjs.org/@types/react-dom@18.0.11
+
+  packages/components/utils:
+    dependencies:
+      react:
+        specifier: '>=18.0.0'
+        version: registry.npmjs.org/react@18.2.0
+      react-dom:
+        specifier: '>=18.0.0'
+        version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
+      tailwindcss:
+        specifier: '>=3.2.0'
+        version: registry.npmjs.org/tailwindcss@3.3.1(postcss@8.4.21)(ts-node@10.9.1)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.0.28
+        version: registry.npmjs.org/@types/react@18.0.33
+      '@types/react-dom':
+        specifier: ^18.0.11
+        version: registry.npmjs.org/@types/react-dom@18.0.11
 
 packages:
 
