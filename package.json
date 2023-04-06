@@ -1,12 +1,26 @@
 {
   "name": "cv-design",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.1",
+  "description": "A high quality UI library for React 16+. Based on Typescript and TailwindCSS",
+  "homepage": "https://github.com/colovu/cv-design",
+  "author": "Endial Fang <endial@126.com>",
+  "license": "MIT",
   "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -1,0 +1,9 @@
+packages:
+  # packages/ 路径及子路径下的所有包
+  - 'packages/**'
+  # apps/ 路径及子路径下的所有包
+  - 'apps/**'
+  # libs/ 路径及子路径下的所有包
+  - 'libs/**'
+  # 屏蔽测试目录
+  - '!**/test/**'
