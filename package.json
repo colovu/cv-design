@@ -6,7 +6,17 @@
   "author": "Endial Fang <endial@126.com>",
   "license": "MIT",
   "keywords": [],
-  "scripts": {},
+  "scripts": {
+    "start": "pnpm --filter 'admin' run dev",
+    "build": "pnpm run b:cvd && pnpm run b:app",
+    "b:cvd": "pnpm --filter '@cv-design/*' --filter 'cvd' --filter '!@cv-design/doc' exec tsbb build",
+    "b:app": "pnpm --filter 'admin' run build",
+    "preinstall": "npx only-allow pnpm",
+    "clean": "pnpm run clean:cvd && pnpm run clean:app",
+    "clean:cvd": "pnpm -r --parallel --filter '@cvd/*' --filter 'cvd' exec rimraf node_modules esm cjs dist lib",
+    "clean:app": "pnpm -r --parallel --filter 'admin' exec rimraf node_modules out",
+    "pre": "pnpm install --frozen-lockfile && pnpm add -g tsbb tsx rimraf"
+  },
   "engines": {
     "node": ">=16.0.0"
   },

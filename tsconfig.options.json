@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": false, // 允许编译javascript文件
+    "allowSyntheticDefaultImports": true, // 允许默认从没有默认导出的模块导入；配合 commonjs 模块使用时候，不会影响运行时
+    "esModuleInterop": false, // 允许使用 import 引入使用 export = 导出的内容；配合 commonjs 模块使用时候，会影响运行时
+    "experimentalDecorators": true, // 启用实验性的ES装饰器
+    "forceConsistentCasingInFileNames": true, // 禁止对同一个文件的不一致的引用
+    "jsx": "react-jsx", // fix: Cannot use jsx unless the '--jsx' flag is provided；需 Typescript 4.1 之后版本
+    "isolatedModules": true, // 该属性要求所有文件都是 ES Module 模块
+    "lib": ["dom", "dom.iterable", "esnext", "esnext.intl", "es2017.intl", "es2018.intl"], // 引入 ES 最新特性和 DOM 接口的类型定义；引入 react-intl 定义
+    "module": "esnext", // 使用 ES Module 格式打包编译后的文件
+    "moduleResolution": "node", // 使用 Node 的模块解析策略；引入 JSON 解析需要该配置
+    "noEmit": false, // 不生成输出文件
+    "noImplicitAny": false, // 在表达式和声明上有隐含的 any类型时报错
+    "noImplicitReturns": true, // 不是函数的所有返回路径都有返回值时报错
+    "noUnusedLocals": false, // 若有未使用的局部变量则抛错
+    "noUnusedParameters": false, // 若有未使用的参数则抛错
+    "resolveJsonModule": true, // 允许引入 JSON 文件
+    "skipLibCheck": true, // 跳过对 .d.ts 文件的类型检查
+    "sourceMap": true,  // 生成 sourceMap 文件
+    "strict": true, // 启用所用严格的类型检查，其他 strictXxx 配置项不用配置
+    "suppressImplicitAnyIndexErrors": true, // 阻止 --noImplicitAny对缺少索引签名的索引对象报错
+    "target": "esnext" // 将代码编译为最新版本的 JS
+  }
+}

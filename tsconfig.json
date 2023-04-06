@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.options.json",
+  "compilerOptions": {
+    "types": [
+      "vite/client", // 提供 资源导入(如svg） / import.meta.env / import.meta.hot（HMR) 支持
+      "node"
+    ],
+    "paths": {
+      "@cvd/*": ["packages/*"]
+    }
+  },
+  "include": ["./packages","./apps","./libs"],
+  "exclude": [
+    "node_modules",
+    "docs",
+    "./packages/*/cjs",
+    "./packages/*/esm",
+    "./packages/*/node_modules"
+  ]
+}
