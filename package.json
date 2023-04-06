@@ -13,7 +13,7 @@
     "b:app": "pnpm --filter 'admin' run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "pnpm changeset publish --registry=https://registry.npmjs.com/",
+    "release": "pnpm changeset publish",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "clean": "pnpm run clean:cvd && pnpm run clean:app",
