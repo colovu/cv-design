@@ -5,7 +5,7 @@
 本工程技术实现使用了以下技术栈：
 
 - Node.js
-- React
+- React：详细使用说明可参照[官方文档](https://react.dev)
 - TailwindCSS
 - Typescript
 
@@ -16,6 +16,10 @@
 - commitlint：格式化 `git commit` 命令中的提交信息
 - husky：Husky 可以将 git 内置的钩子暴露出来，很方便地进行钩子命令注入
 
+> 注意：工程中未安装相应的部分工具包，需要手动安装，如：
+>     pnpm add -g rimraf tsbb tsx
+> 或使用工程提供的脚本命令安装：
+>     pnpm pre
 
 ## 工程文件说明
 
@@ -28,4 +32,4 @@
 
 ## License
 
-本工程基于 MIT 协议许可使用。 
+本工程基于 MIT 协议许可使用。
