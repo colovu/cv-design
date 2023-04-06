@@ -1,0 +1,33 @@
+{
+  "name": "@cv-design/utils",
+  "version": "0.0.1",
+  "description": "Utils for cv-design library.",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "keywords": [
+    "cvd",
+    "cv-design",
+    "react",
+    "ui"
+  ],
+  "author": "Endial Fang <endial@126.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/colovu/cv-design",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colovu/cv-design.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "tailwindcss": ">=3.2.0"
+  }
+}
