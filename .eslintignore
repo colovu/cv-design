@@ -1,0 +1,8 @@
+# eslint 忽略文件列表
+
+dist
+esm
+cjs
+.cache
+node_modules
+**/*.md

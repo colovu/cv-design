@@ -1,0 +1,7 @@
+# prettier 忽略文件列表
+
+dist
+esm
+cjs
+pnpm-lock.yaml
+node_modules

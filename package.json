@@ -16,7 +16,10 @@
     "clean": "pnpm run clean:cvd && pnpm run clean:app",
     "clean:cvd": "pnpm -r --parallel --filter '@cvd/*' --filter 'cvd' exec rimraf node_modules esm cjs dist lib",
     "clean:app": "pnpm -r --parallel --filter 'admin' exec rimraf node_modules out",
-    "pre": "pnpm install --frozen-lockfile && pnpm add -g tsbb tsx rimraf"
+    "pre": "pnpm install --frozen-lockfile && pnpm add -g tsbb tsx rimraf",
+    "lint": "pnpm prettier && pnpm lint:ts",
+    "lint:ts": "eslint --fix \"{packages,libs,apps,scripts}/**/*.{js,jsx,ts,tsx}\" --cache --cache-location node_modules/.cache/eslintcache",
+    "prettier": "prettier --write \"{packages,libs,apps,scripts,docs}/**/*.{js,jsx,ts,tsx,css,less,json,html,md}\" --cache --cache-location node_modules/.cache/prettiercache"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -45,7 +48,17 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
+    "prettier": "^2.8.7",
     "typescript": "^5.0.3"
   }
 }
